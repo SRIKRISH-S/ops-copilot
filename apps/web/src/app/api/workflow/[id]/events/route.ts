@@ -1,6 +1,8 @@
 import { NextRequest } from "next/server";
 import { getAgentApiBase } from "@/lib/agent-api";
 
+export const runtime = "edge";
+
 export async function GET(
   _request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
