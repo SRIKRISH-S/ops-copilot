@@ -66,7 +66,7 @@ class ReviewOutput(BaseModel):
 class WorkflowResult(BaseModel):
     run_id: str
     goal: str
-    status: Literal["running", "completed", "failed"]
+    status: Literal["queued", "running", "completed", "failed"]
     created_at: datetime
     completed_at: datetime | None = None
     planner: PlannerOutput | None = None
